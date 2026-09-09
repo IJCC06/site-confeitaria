@@ -135,8 +135,11 @@ p {
 footer {
     background-color: #FBF4E6;
     height: 70px;
-    font-size: 20px;
+    margin-top: 40px;
+
+    font-size: 18px;
     font-weight: bold;
+    
     display: flex;
     align-items: center;
     justify-content: center;
