@@ -145,8 +145,9 @@ ul a:hover {
     transform: translate(-50%, -50%);
     background-color: #FBF4E6;
     border-radius: 10px;
-    width: 300px;
-    padding: 10px;
+    width: 320px;
+    height: auto;
+    padding: 10px 20px 10px 20px;
     z-index: 2;
 }
 
@@ -167,4 +168,29 @@ p {
     font-size: 15.5px;
     text-align: justify;
     width: 42%;
+}
+
+.fechar {
+    text-align: right;
+}
+
+.button-reserva {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    color: #D42A30;
+}
+.button-reserva:hover {
+    text-decoration: underline;
+}
+
+.modal-pix {
+    margin: 10px;
+    text-align: center;
+}
+.modal-pix img {
+    margin-top: 6px;
 }
