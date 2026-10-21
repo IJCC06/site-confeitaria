@@ -75,20 +75,61 @@ ul a:hover {
     object-fit: contain;
 }
 
+.sobre {
+    height: 475px;
+    margin: 12px;
+    padding: 5px;
+    display: flex;
+}
+
 .textos-sobre {
-    border: 5px solid black;
+    border: 2px solid #CC9552;
+    border-radius: 5px;
+    box-shadow: 7px 6px 25px 0px #00000080;
+
+    padding: 10px;
+    gap: 5px;
     width: 50%;
     height: auto;
-    margin-top: 50px;
-
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .textos-sobre h1 {
     font-size: 40px;
+    color: #d23137;
     font-style: italic;
     font-weight: 600;
+    text-shadow: 3px 1px 5px rgba(0, 0, 0, 0.489);
 }
 .textos-sobre p {
     font-size: 16px;
-    text-align: justify;
+}
+
+.img-sobre {
+    width: 50%;
+    height: auto;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img {
+    height: 95%;
+    width: 95%;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: #FBF4E6;
+    height: 64px;
+    margin-top: 40px;
+
+    font-size: 16px;
+    font-weight: bold;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

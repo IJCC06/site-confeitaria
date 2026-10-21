@@ -194,3 +194,16 @@ p {
 .modal-pix img {
     margin-top: 6px;
 }
+
+footer {
+    background-color: #FBF4E6;
+    height: 64px;
+    margin-top: 40px;
+
+    font-size: 16px;
+    font-weight: bold;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
