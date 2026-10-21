@@ -43,4 +43,84 @@
             </nav>
         </div>
     </header>
+
+    <h1 class="titulo-form">Formulário de Contato</h1>
+
+    <form id="meuFormulario">
+        <div class="container">
+            <!-- Dados Pessoais -->
+            <fieldset>
+                <legend>Dados do Cliente</legend>
+
+                <div class="item-form">
+                    <label>Nome:</label>
+                    <input type="text" required>
+                </div>
+            
+                <div class="item-form">
+                    <label>Endereço:</label>
+                    <input type="text" required>
+                </div>
+
+                <div class="item-form">
+                    <label>Telefone:</label>
+                    <input type="tel" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações do Pedido</legend>
+
+                <div class="item-form">
+                    <label>Bolo:</label>
+                    <select required>
+                        <option disabled selected>--Selecione--</option>
+                        <option>de Chocolate</option>
+                        <option>de Fubá</option>
+                        <option>de Cenoura</option>
+                        <option>de Nutela</option>
+                        <option>de Morango</option>
+                        <option>de Ninho com Morango</option>
+                    </select>
+                </div>
+
+                <div class="item-form">
+                    <label>Quantidade:</label>
+                    <input type="number" required min="1" max="100">
+                </div>
+
+                <div class="item-form">
+                    <label>Total:</label>
+                    <input type="number" required min="1" max="9999">
+                </div>
+
+                <div class="item-form">
+                    <label>Forma de Pagamento:</label>
+                    <select required>
+                        <option disabled selected>--Selecione--</option>
+                        <option>PIX</option>
+                        <option>Cartão</option>
+                        <option>Dinheiro</option>
+                    </select>
+                </div>
+
+                <div class="item-form">
+                    <label>Observações:</label>
+                    <textarea rows="3" cols="25"></textarea>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="container botoes">
+            <button type="submit" id="btnEnviar" disabled>Enviar Pedido</button>
+            <button type="reset">Limpar Formulário</button>
+        </div>
+    </form>
+
+    <footer>
+        &copy; 2026 Cassano Doces.
+        Todos os Direitos Reservados.
+    </footer>
 </body>
+<script src="../js/contato.js"></script>
+</html>

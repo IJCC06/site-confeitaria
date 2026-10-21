@@ -74,3 +74,137 @@ ul a:hover {
     margin-top: 5px;
     object-fit: contain;
 }
+
+.titulo-form {
+    position: relative;
+    width: fit-content;
+    margin: 14px auto;
+
+    font-size: 32px;
+    font-weight: bold;
+    color: #ac7030;
+    text-align: center;
+
+    text-decoration: none;
+}
+/* Linha superior */
+.titulo-form::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+
+    border-top: 2px solid #ac7030;
+}
+/* Linha inferior simples */
+.titulo-form::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+
+    border-bottom: 2px solid #ac7030;
+}
+
+.container {
+    height: auto;
+    margin: 3px;
+    padding: 3px;
+    display: flex;
+    justify-content: space-around;
+}
+
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    color: #D42A30;
+    margin-left: 12px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+    border: 3px solid #AC7037;
+    border-radius: 3px;
+    background-color: #FBF3E5;
+}
+
+.item-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    gap: 10px;
+}
+
+label, input, select, textarea {
+    font-size: 16px;
+}
+
+input, select, textarea {
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 220px;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+.botoes {
+    margin: 5px;
+    justify-content: right;
+}
+
+button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px gray;
+    margin-right: 25px;
+    background-color: #FBF3E0;
+    color: #5f5140;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+}
+/* Botão de reset: tons avermelhados */
+button[type="reset"]:hover {
+    background-color: #dc7173;
+    color: #5f0e11;
+}
+/* Botão de submit: tons esverdeados */
+button[type="submit"]:hover {
+    background-color: #c5ee8b;
+    color: #5e7e32;
+}
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+button:disabled:hover {
+    background-color: #FBF3E0;
+    color: inherit;
+}
+
+footer {
+    background-color: #FBF4E6;
+    height: 64px;
+    margin-top: 35px;
+
+    font-size: 16px;
+    font-weight: bold;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
